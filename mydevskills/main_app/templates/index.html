@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li style="list-style: none"><a href="/" class="left brand-logo">MyDevSkills</a></li>
+            </ul>
+            <ul class='right'>
+                    <li><a href="{% url 'login_view' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}">SignUp</a></li>
+                </ul>
+        </div>
+    </nav>
+ </header>
+
+
+<h1>Welcome to My Dev Skills!</h1>
+
+{% endblock %}
